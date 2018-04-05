@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>[demo]</title>
+	<meta charset="UTF-8" />
+
+	<link href="css/style-work-new.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+
+	<section>
+    <img src="assets/shapes2/0.jpg" />
+        <img src="assets/shapes2/1.jpg" />
+    		<img src="assets/shapes2/2.jpg" />
+        <img src="assets/shapes2/3.jpg" />
+    		<img src="assets/shapes2/4.jpg" />
+        <img src="assets/shapes2/5.jpg" />
+	</section>
+
+	<header>
+			<h1><a href="index.html"><p>Nina van Tuikwerd</p></a></h1>
+	</header>
+
+	<footer>
+    <h2> Shapes, shapes, shapes
+ 		</h2>
+		<h3> 3D renders, animations, posters
+ 		</h3>
+		<br>
+		<p>Avoid any extra thinking. Any conceptual approaches. It's raw and “primitive” research for visual pleasure.
+		</p>
+
+	</footer>
+
+
+	<div id="terugbutton">
+    <a href="index.html">back</a>
+    </div>
+
+    <div id="button">
+      <a href="work-shapes.html">3D</a>
+      </div>
+
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- script for this site -->
+	<script src="js/all.js"></script>
+
+	<script type="text/javascript">
+		$( function ( ) {
+			var preventHistoryBack = function( e ) {
+				var delta = e.deltaX || e.wheelDeltaX;
+
+				if ( !delta ) return;
+
+				var el = e.target;
+				if ( ( ( el.scrollLeft + el.offsetWidth ) === el.scrollWidth && delta > 0 )
+					|| ( el.scrollLeft === 0 && delta < 0 ) ) e.preventDefault( );
+			};
+
+			document.body.addEventListener( 'mousewheel', preventHistoryBack );
+		} );
+	</script>
+
+</body>
+</html>

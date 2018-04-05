@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>[demo]</title>
+	<meta charset="UTF-8" />
+
+	<link href="css/style-work-new.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+
+	<section>
+    <img src="assets/installation/1.jpg" />
+		<img src="assets/installation/2.jpg" />
+		<img src="assets/installation/3.jpg" />
+		<img src="assets/installation/4.jpg" />
+		<img src="assets/installation/5.jpg" />
+		<img src="assets/installation/6.jpg" />
+		<img src="assets/installation/7.jpg" />
+		<img src="assets/installation/8.jpg" />
+
+	</section>
+
+	<header>
+			<h1><a href="index.html"><p>Nina van Tuikwerd</p></a></h1>
+	</header>
+
+	<footer>
+		<h2> Coloring landscapes
+		</h2>
+		<h3> video installation
+		</h3>
+		<br>
+		<p>Luring the viewers into my favorite landscapes.
+		</p>
+
+
+	</footer>
+
+
+	<div id="terugbutton">
+    <a href="index.html">back</a>
+    </div>
+
+		<div id="button">
+			<a href="work-landscape.html">videos</a>
+			</div>
+
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- script for this site -->
+	<script src="js/all.js"></script>
+
+	<script type="text/javascript">
+		$( function ( ) {
+			var preventHistoryBack = function( e ) {
+				var delta = e.deltaX || e.wheelDeltaX;
+
+				if ( !delta ) return;
+
+				var el = e.target;
+				if ( ( ( el.scrollLeft + el.offsetWidth ) === el.scrollWidth && delta > 0 )
+					|| ( el.scrollLeft === 0 && delta < 0 ) ) e.preventDefault( );
+			};
+
+			document.body.addEventListener( 'mousewheel', preventHistoryBack );
+		} );
+	</script>
+
+</body>
+</html>

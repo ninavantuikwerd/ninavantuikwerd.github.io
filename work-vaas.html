@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>[demo]</title>
+	<meta charset="UTF-8" />
+
+	<link href="css/style-work-new.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+	<section>
+    <video id="video" controls autoplay>>
+      <source src="assets/videos/vaas2_1.mov" />
+      <source src="vaas2_1_Ogg.ogv" />
+      <source src="vaas2_1_WebM.webm" />
+  </video>
+	</section>
+
+	<header>
+		<h1>  </h1>
+	</header>
+
+	<footer>
+		<h1><a href="index.html"><p>Nina van Tuikwerd</p></a></h1>
+	</footer>
+
+
+	<div id="terugbutton">
+    <a href="index.html"><p>Back</p></a>
+    </div>
+
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- script for this site -->
+	<script src="js/all.js"></script>
+
+	<script type="text/javascript">
+		$( function ( ) {
+			var preventHistoryBack = function( e ) {
+				var delta = e.deltaX || e.wheelDeltaX;
+
+				if ( !delta ) return;
+
+				var el = e.target;
+				if ( ( ( el.scrollLeft + el.offsetWidth ) === el.scrollWidth && delta > 0 )
+					|| ( el.scrollLeft === 0 && delta < 0 ) ) e.preventDefault( );
+			};
+
+			document.body.addEventListener( 'mousewheel', preventHistoryBack );
+		} );
+	</script>
+
+</body>
+</html>

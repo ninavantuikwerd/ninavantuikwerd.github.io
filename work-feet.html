@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>[demo]</title>
+	<meta charset="UTF-8" />
+
+	<link href="css/style-work-new.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+
+	<section>
+    <img src="assets/feet/feet0.jpg" />
+		<img src="assets/feet/feet1.jpg" />
+		<img src="assets/feet/feet2.jpg" />
+		<img src="assets/feet/feet3.jpg" />
+		<img src="assets/feet/feet4.jpg" />
+		<img src="assets/feet/feet5.jpg" />
+		<img src="assets/feet/feet6.jpg" />
+
+	</section>
+
+	<header>
+			<h1><a href="index.html"><p>Nina van Tuikwerd</p></a></h1>
+	</header>
+
+	<footer>
+		<h2> Podophobia
+ 		</h2>
+		<h3> Publication
+		</h3>
+		<br>
+		<p> The fear of feet turned into a publication.
+		</p>
+
+	</footer>
+
+
+	<div id="terugbutton">
+    <a href="index.html">back</a>
+    </div>
+
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- script for this site -->
+	<script src="js/all.js"></script>
+
+	<script type="text/javascript">
+		$( function ( ) {
+			var preventHistoryBack = function( e ) {
+				var delta = e.deltaX || e.wheelDeltaX;
+
+				if ( !delta ) return;
+
+				var el = e.target;
+				if ( ( ( el.scrollLeft + el.offsetWidth ) === el.scrollWidth && delta > 0 )
+					|| ( el.scrollLeft === 0 && delta < 0 ) ) e.preventDefault( );
+			};
+
+			document.body.addEventListener( 'mousewheel', preventHistoryBack );
+		} );
+	</script>
+
+</body>
+</html>

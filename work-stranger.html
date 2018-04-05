@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>[demo]</title>
+	<meta charset="UTF-8" />
+
+	<link href="css/style-work-new.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+
+	<section>
+    <img src="assets/stranger2/stranger0.jpg" />
+		<img src="assets/stranger2/stranger1.jpg" />
+		<img src="assets/stranger2/stranger2.jpg" />
+		<img src="assets/stranger2/stranger3.jpg" />
+		<img src="assets/stranger2/stranger4.jpg" />
+    <img src="assets/stranger2/stranger5.jpg" />
+		<img src="assets/stranger2/stranger6.jpg" />
+    <img src="assets/stranger2/stranger7.jpg" />
+		<img src="assets/stranger2/stranger8.jpg" />
+
+	</section>
+
+	<header>
+			<h1><a href="index.html"><p>Nina van Tuikwerd</p></a></h1>
+	</header>
+
+	<footer>
+		<h2> Stranger in Paradise
+ 		</h2>
+		<h3> mixed media
+ 		</h3>
+		<br>
+		<p> In the documentary Stranger in Paradise,
+a teacher subjects refugees in a classroom to the many faces of Europe. He approaches them first cold and harsh, then sympathetic and patronizing, followed by a business approach according to the asylum rules.
+The different states: <b>dreams</b>, <b>rules</b> and <b>reality</b> were visualized by three interventions in school.
+Followed by a publication with newsarticles about the three different views. Three digital printed posters on fabric were made from the images in the newsarticles.
+		</p>
+
+	</footer>
+
+
+	<div id="terugbutton">
+    <a href="index.html"><p>back</p></a>
+    </div>
+
+		<div id="button">
+	    <a href="work-stranger2.html"><p>full publication</p></a>
+	    </div>
+
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- script for this site -->
+	<script src="js/all.js"></script>
+
+	<script type="text/javascript">
+		$( function ( ) {
+			var preventHistoryBack = function( e ) {
+				var delta = e.deltaX || e.wheelDeltaX;
+
+				if ( !delta ) return;
+
+				var el = e.target;
+				if ( ( ( el.scrollLeft + el.offsetWidth ) === el.scrollWidth && delta > 0 )
+					|| ( el.scrollLeft === 0 && delta < 0 ) ) e.preventDefault( );
+			};
+
+			document.body.addEventListener( 'mousewheel', preventHistoryBack );
+		} );
+	</script>
+
+</body>
+</html>

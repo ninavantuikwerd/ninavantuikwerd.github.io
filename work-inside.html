@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>[demo]</title>
+	<meta charset="UTF-8" />
+
+	<link href="css/style-work-new.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+
+	<section>
+    <img src="assets/inside/inside0.jpg" />
+		<img src="assets/inside/inside1.jpg" />
+		<img src="assets/inside/inside2.jpg" />
+		<img src="assets/inside/inside3.jpg" />
+		<img src="assets/inside/inside4.jpg" />
+		<img src="assets/inside/inside5.jpg" />
+		<img src="assets/inside/inside6.jpg" />
+
+	</section>
+
+	<header>
+			<h1><a href="index.html"><p>Nina van Tuikwerd</p></a></h1>
+	</header>
+
+	<footer>
+		<h2> INSIDE
+ 		</h2>
+		<h3> Publication
+		</h3>
+
+		<br>
+		<p> INSIDE is a 2 year fulltime master’s course located in The Hague.
+			<br>Together with Dana Doorenbos we designed the 8th edition of INSIDE Magazine, and the #8 Graduation part with the INSIDE 16/17 alumni.
+		</p>
+
+	</footer>
+
+
+	<div id="terugbutton">
+    <a href="index.html">back</a>
+    </div>
+
+		<div id="button">
+	    <a href="https://issuu.com/enterinside/docs/inside-issuu-ilovepdf-compressed__1">ISSUU Magazine</a>
+	    </div>
+
+			<div id="button2">
+				<a href="https://issuu.com/enterinside/docs/kleine-boekjes-issuu">ISSUU Graduation part</a>
+				</div>
+
+
+
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- script for this site -->
+	<script src="js/all.js"></script>
+
+	<script type="text/javascript">
+		$( function ( ) {
+			var preventHistoryBack = function( e ) {
+				var delta = e.deltaX || e.wheelDeltaX;
+
+				if ( !delta ) return;
+
+				var el = e.target;
+				if ( ( ( el.scrollLeft + el.offsetWidth ) === el.scrollWidth && delta > 0 )
+					|| ( el.scrollLeft === 0 && delta < 0 ) ) e.preventDefault( );
+			};
+
+			document.body.addEventListener( 'mousewheel', preventHistoryBack );
+		} );
+	</script>
+
+</body>
+</html>

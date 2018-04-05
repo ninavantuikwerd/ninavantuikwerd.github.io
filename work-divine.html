@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>[demo]</title>
+	<meta charset="UTF-8" />
+
+	<link href="css/style-work-new.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+
+	<section>
+    <img src="assets/divine/muur1.jpg" />
+		<img src="assets/divine/muur2.jpg" />
+		<img src="assets/divine/muur3.jpg" />
+		<img src="assets/divine/muur4.jpg" />
+		<img src="assets/divine/cador.gif" />
+		<img src="assets/divine/muur5.jpg" />
+
+	</section>
+
+	<header>
+			<h1><a href="index.html"><p>Nina van Tuikwerd</p></a></h1>
+	</header>
+
+	<footer>
+		<h2> The Gallery Divine
+ 		</h2>
+
+		<h3> Wall painting
+		</h3>
+		<br>
+		<p> Having taken a trip to Iran in the past year the students of Graphic Design department from the KABK travelled the country to explore the role of ornaments in countless cultural places and sights. The result of the extensive research, and the translation from the digital to the physical, is at the centre of The Gallery Divine.
+We were asked to make a shrine for the person we most admire, I made mine for my great great grandfather, Johannes Diderik van der Waals.
+		</p>
+
+	</footer>
+
+
+	<div id="terugbutton">
+    <a href="index.html">back</a>
+    </div>
+
+		<div id="button">
+			<a href="https://glamcult.com/the-gallery-divine-kabk/">Glamcult</a>
+			</div>
+
+			<div id="button2">
+				<a href="https://www.instagram.com/theornamentaldivine/?hl=nl">Instagram </a>
+				</div>
+
+
+
+
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- script for this site -->
+	<script src="js/all.js"></script>
+
+	<script type="text/javascript">
+		$( function ( ) {
+			var preventHistoryBack = function( e ) {
+				var delta = e.deltaX || e.wheelDeltaX;
+
+				if ( !delta ) return;
+
+				var el = e.target;
+				if ( ( ( el.scrollLeft + el.offsetWidth ) === el.scrollWidth && delta > 0 )
+					|| ( el.scrollLeft === 0 && delta < 0 ) ) e.preventDefault( );
+			};
+
+			document.body.addEventListener( 'mousewheel', preventHistoryBack );
+		} );
+	</script>
+
+</body>
+</html>

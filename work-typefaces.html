@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>[demo]</title>
+	<meta charset="UTF-8" />
+
+	<link href="css/style-work-new.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+	<section>
+		<img src="assets/typeface/type-0.jpg" />
+    <img src="assets/typeface/type-1.jpg" />
+		<img src="assets/typeface/type-2.jpg" />
+		<img src="assets/typeface/type-3.jpg" />
+		<img src="assets/typeface/type-4.jpg" />
+		<img src="assets/typeface/type-5.jpg" />
+		<img src="assets/typeface/type-6.jpg" />
+		<img src="assets/typeface/type-7.jpg" />
+		<img src="assets/typeface/type-8.jpg" />
+		<img src="assets/typeface/type-9.jpg" />
+		<img src="assets/typeface/type-10.jpg" />
+		<img src="assets/typeface/type-11.jpg" />
+		<img src="assets/typeface/type-12.jpg" />
+		<img src="assets/typeface/type-13.jpg" />
+		<img src="assets/typeface/type-14.jpg" />
+		<img src="assets/typeface/type-15.jpg" />
+		<img src="assets/typeface/type-16.jpg" />
+		<img src="assets/typeface/type-17.jpg" />
+	</section>
+
+	<header>
+		<h1><a href="index.html"><p>Nina van Tuikwerd</p></a></h1>
+	</header>
+
+	<footer>
+		<h2> Henri, M. & Bol
+		</h2>
+
+		<h3> Modular Letter Systems
+		</h3>
+		<br>
+		<p> Two typefaces designed of a collection of reusable shapes which can create diffetent letterforms. 	</p>
+
+	</footer>
+
+	<div id="terugbutton">
+    <a href="index.html"><p>Back</p></a>
+    </div>
+
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- script for this site -->
+	<script src="js/all.js"></script>
+
+	<script type="text/javascript">
+		$( function ( ) {
+			var preventHistoryBack = function( e ) {
+				var delta = e.deltaX || e.wheelDeltaX;
+
+				if ( !delta ) return;
+
+				var el = e.target;
+				if ( ( ( el.scrollLeft + el.offsetWidth ) === el.scrollWidth && delta > 0 )
+					|| ( el.scrollLeft === 0 && delta < 0 ) ) e.preventDefault( );
+			};
+
+			document.body.addEventListener( 'mousewheel', preventHistoryBack );
+		} );
+	</script>
+
+</body>
+</html>

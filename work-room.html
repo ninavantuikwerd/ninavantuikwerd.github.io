@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>[demo]</title>
+	<meta charset="UTF-8" />
+
+	<link href="css/style-work-new.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+
+	<section>
+    <img src="assets/room/room0.jpg" />
+		<img src="assets/room/room1.jpg" />
+		<img src="assets/room/room2.jpg" />
+		<img src="assets/room/room3.jpg" />
+		<img src="assets/room/room4.jpg" />
+		<img src="assets/room/room5.jpg" />
+
+	</section>
+
+	<header>
+			<h1><a href="index.html"><p>Nina van Tuikwerd</p></a></h1>
+	</header>
+
+	<footer>
+		<h2> Who is in the warroom?
+ 		</h2>
+		<h3> Digital Platform
+		</h3>
+
+		<br>
+		<p> 'Who is in the war room?' is a publicly accessible website designed by Verena Hahn and Nina van Tuikwerd to host a fictional interactive conference room filled with clues related to key political actors involved in the 2016 funeral bombing in Yemen. Many of the scattered objects are linked to text fragments disclosing the real timeline of events from October 8, 2016. With our project we attempt to highlight the world of state certified human rights violations, illicit arms trafficking, corruption and money laundering.
+		</p>
+
+	</footer>
+
+
+	<div id="terugbutton">
+    <a href="index.html"><p>back</p></a>
+    </div>
+
+
+
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- script for this site -->
+	<script src="js/all.js"></script>
+
+	<script type="text/javascript">
+		$( function ( ) {
+			var preventHistoryBack = function( e ) {
+				var delta = e.deltaX || e.wheelDeltaX;
+
+				if ( !delta ) return;
+
+				var el = e.target;
+				if ( ( ( el.scrollLeft + el.offsetWidth ) === el.scrollWidth && delta > 0 )
+					|| ( el.scrollLeft === 0 && delta < 0 ) ) e.preventDefault( );
+			};
+
+			document.body.addEventListener( 'mousewheel', preventHistoryBack );
+		} );
+	</script>
+
+</body>
+</html>
