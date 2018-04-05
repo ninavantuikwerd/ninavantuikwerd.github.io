@@ -1,0 +1,36 @@
+h1 {
+    color: black;
+    text-align: center;
+    font-family: "Relative-Book";
+    font-size: 5.9vw;
+}
+
+h2 {
+    color: black;
+    text-align: right;
+    font-family: "Relative-Book";
+    font-size: 4vw;
+}
+div{
+  position: relative;
+}
+img{
+    position: absolute;
+    margin: auto;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+p {
+	color: black;
+    text-align: right;
+    font-family: "Relative-Book";
+    font-size: 3vw;
+
+}
+a:link,
+a:visited {
+	text-decoration:none;
+}

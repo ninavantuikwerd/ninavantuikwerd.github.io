@@ -1,0 +1,187 @@
+* {
+	margin: 0;
+	padding: 0
+	border: 0
+	outline: 0;
+}
+
+html, body { height: 100% }
+
+body{
+	font-family: "Helvetica";
+    background: #FBFBFB;
+
+
+}
+
+@font-face {
+	font-family: "san-serif";
+
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-family: "Helvetica";
+    font-size: 120%;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    font-family: "Helvetica";
+    font-size: 110%;
+}
+h3 {
+    color: black;
+    text-align: center;
+    font-family: "Helvetica";
+		font-style: italic;
+    font-size: 100%;
+}
+
+
+p {
+    color: black;
+    text-align: center;
+    font-family: "Helvetica";
+    font-size: 100%;
+}
+
+div{
+  position: left;
+}
+a:link,
+a:visited {
+	text-decoration:none;
+}
+
+
+section {
+		position: absolute;
+		top: calc(1.2em + 20px + 48px); left: 1.5%;
+		width: 97%;
+		padding: 24px 0;
+		height: calc(100% - 120px);
+		height: calc(100% - (1.2em + 20px + 48px)
+						  - (4.8em + 20px + 48px) );
+		white-space: nowrap;
+		overflow: hidden;
+		overflow-x: auto;
+		box-sizing: border-box;
+}
+
+section > img {
+	width: auto;
+	height: 100%;
+	margin-right: 18px;
+	display: inline-block;
+  	pointer-events: none;
+}
+
+section > img:last-child {
+	margin-right: 0 !important;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+
+		margin-top: 20px;
+    font-family: "Helvetica";
+    font-size: 150%;
+    margin-bottom:20px;
+}
+
+footer {
+	position: fixed;
+	font-family: Relative-Book kopie.otf;
+	left: 1.5%; right: 1.5%;
+
+    font-size: 95%;
+    line-height: 1.2em;
+
+
+    padding: 5px 0;
+
+    text-align: center;
+    box-sizing: border-box;
+
+}
+header { top: 24px }
+
+footer {
+	bottom: 24px;
+	height: calc(4.8em + 50px);
+}
+
+#terugbutton {
+position: absolute;
+font-size:89%;
+left: 95%;
+top: 50px;
+padding-right:20px;
+}
+
+#button {
+position: absolute;
+font-size:89%;
+left: 80%;
+top: 50px;
+padding-right:20px;
+}
+
+#button2 {
+position: absolute;
+font-size:89%;
+left: 65%;
+top: 50px;
+padding-right:20px;
+}
+
+a:link,
+a:visited {
+	text-decoration:none;
+	color:#000;
+}
+a:hover{
+    background-color: yellow;
+}
+
+#video{
+	width: 70%;
+	margin-left: auto;
+	 margin-right: auto;
+	 display: block
+
+}
+#land1{
+	width: 30%;
+	margin-left: 40%;
+	padding-bottom:50px;
+
+
+
+}
+
+#land2{
+	width: 30%;
+	margin-left: 11%;
+	float: left;
+	 display: block
+}
+
+#land3{
+	width: 30%;
+	top: 10%;
+	margin-left: 60%;
+	 display: block
+}
+
+#shape{
+	width: auto;
+	height: 100%;
+	margin-right: 18px;
+	display: inline-block;
+  	pointer-events: none;
+}
